@@ -1,0 +1,264 @@
+/*
+    Ryan Musselwhite's Portfolio CSS
+
+*/
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: Lato, Helvetica;
+    background: #232526; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #979fa3, #6d7174); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #979fa3, #6d7174); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+#mainContainer {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 30px;
+    box-shadow: 0 4px 80px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    overflow: none;
+    background: #fff;
+    margin-bottom: 30px;
+}
+
+h1, h2, h3, h4 {
+    font-weight: 300;
+}
+
+#mainContainer-home {
+    background: #FFA17F; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(20deg, #232526, #414345); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(20deg, #232526, #414345); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(20deg, #232526, #414345); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(20deg, #232526, #414345); /* Standard syntax */
+    width: 100%;
+    height: 50%;
+    color: #fff;
+    min-height: 700px;
+}
+
+#mainContainer-home-menu {
+    background: none;
+    border: none;
+    padding-top: 20px;
+}
+
+#mainContainer-home h1 {
+    font-weight: 100;
+    font-size: 55px;
+    margin-top: 0px;
+}
+
+#mainContainer-home h4 {
+    font-weight: 300;
+}
+
+@media (min-width: 768px) {
+    #mainContainer-home-menu .navbar-right {
+        position: absolute;
+        right: 30px;
+        top: 20px;
+    }
+}
+
+#mainContainer-home-menu .navbar-brand {
+    color: #FFF !important;
+    font-weight: bold;
+    border-bottom: 3px solid #fff;
+    width: auto;
+    padding: 0;
+    margin: 0;
+    height: auto;
+    margin: 10px 0px 0px 20px !important;
+}
+
+#mainContainer-home-menu .navbar-toggle {
+    border: 0;
+}
+
+#mainContainer-home-menu .navbar-default .navbar-toggle .icon-bar {
+    background-color: #fff;
+}
+
+#mainContainer-home-menu .navbar-collapse a {
+    color: #fff;
+    opacity: 0.8;
+    font-weight: 100;
+    -webkit-transition: opacity 1s;
+    transition: opacity 1s;
+}
+
+#mainContainer-home-menu .nav-center {
+    float: none;
+    margin: 0 auto;
+    width: 220px;
+}
+
+#mainContainer-home-menu a:hover {
+    -webkit-transition: opacity 1s;
+    transition: opacity 1s;
+    opacity: 1;
+}
+
+.u-bold {
+    font-weight: 700 !important;
+}
+
+#mainContainer-divider {
+    background: url('/img/header.png') repeat-x bottom;
+    margin-top: -300px;
+    height: 300px;
+    width: 100%;
+}
+
+#mainContainer-home .avatarImage {
+    height: 100px;
+    width: 100px;
+    border-radius: 50px;
+    border: 3px solid #fff;
+    margin-top: 50px;
+    background: #fff;
+}
+
+.u-animate {
+    opacity: 0;
+}
+
+.u-animated {
+    -webkit-transition: all 2s;
+    transition: all 2s;
+    opacity: 1;
+}
+
+#mainContainer-about, #mainContainer-blog {
+    clear: both;
+    padding: 30px;
+
+}
+
+#mainContainer-about h1, #mainContainer-blog h1 {
+    font-size: 50px;
+}
+
+.u-hoverBlock {
+    padding: 0;
+    margin: 0 0 20px 0;
+    cursor:pointer;
+    height: 300px;
+    width: 100%;
+    opacity: 1;
+    -webkit-transition: all 2s;
+    transition: all 2s;
+    padding-top: 205px;
+    border:1px solid #ccc;
+}
+
+.u-hoverBlock:hover {
+    opacity: 0.8;
+    -webkit-transition: all 2s;
+    transition: all 2s;
+    box-shadow: 0 4px 80px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.u-hoverBlock h1, .u-hoverBlock p {
+    color: #fff;
+    padding: 0 20px 0 20px;
+    background: #000;
+    opacity: 0.8;
+}
+
+.u-hoverBlock h1 {
+    margin-bottom: 0px;
+}
+
+.portfolio-1 {
+    background: #000 url('/img/port-1/1.png') top center;
+    background-size: cover;
+}
+
+.portfolio-2 {
+    background: #000 url('/img/port-2/1.png');
+    background-size: cover;
+}
+
+.portfolio-3{
+    background: #000 url('/img/port-3/1.png');
+    background-size: cover;
+}
+
+.portfolio-4{
+    background: #000 url('/img/port-4/1.png');
+    background-size: cover;
+}
+
+.portfolio-5{
+    background: #000 url('/img/port-5/1.png');
+    background-size: cover;
+}
+
+.portfolio-6{
+    background: #000 url('/img/port-6/1.png');
+    background-size: cover;
+}
+
+.u-portfolioEntry {
+    background: #efefef;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    margin-top: -30px;
+    padding: 10px;
+    z-index: 1000;
+    transition: all 1s;
+}
+
+.u-portfolioEntry.inactive {
+    visibility: hidden;
+    opacity: 0;
+}
+
+.u-portfolioEntry.active {
+    visibility: visible;
+    opacity: 1;
+}
+
+.u-closeButton {
+    font-weight: bold;
+    font-size: 28px;
+    margin: 50px 20px 0;
+    cursor: pointer;
+    transition: all 0.5s;
+    float: right;
+}
+
+.u-closeButton:hover {
+    color: #888;
+    transition: all 0.5s;
+}
+
+.u-innerBlock {
+    max-height: 100%;
+    height: 100%;
+    overflow: auto;
+}
+
+.u-innerBlock h1, .u-innerBlock h2, .u-innerBlock p {
+    padding: 0 100px 0 100px;
+}
+
+.u-innerBlock h1 {
+    padding-top: 50px;
+}
+
+.u-marginTop {
+    margin-top: 30px;
+}
+
+.u-thumbnail {
+    background: #000;
+    border: 1px solid #ccc;
+}
