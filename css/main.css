@@ -109,7 +109,7 @@ h1, h2, h3, h4 {
 }
 
 #mainContainer-divider {
-    background: url('/img/header.png') repeat-x bottom;
+    background: url('/portfolio/img/header.png') repeat-x bottom;
     margin-top: -300px;
     height: 300px;
     width: 100%;
