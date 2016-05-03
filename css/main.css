@@ -135,13 +135,13 @@ h1, h2, h3, h4 {
     opacity: 1;
 }
 
-#mainContainer-about, #mainContainer-blog {
+#mainContainer-about {
     clear: both;
     padding: 30px;
 
 }
 
-#mainContainer-about h1, #mainContainer-blog h1 {
+#mainContainer-about h1 {
     font-size: 50px;
 }
 
