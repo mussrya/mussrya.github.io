@@ -79,11 +79,11 @@ portfolioApp.contentClick = function ()
 
 
 portfolioApp.hoverProfile = function(){
-    $('.avatarImage').focusin(function(){
+    $('.avatarImage').mouseover(function(){
         $(this).parent('#mainContainer-home').addClass('gradient2');
     });
 
-    $('.avatarImage').focusout(function(){
+    $('.avatarImage').mouseout(function(){
         $(this).parent('#mainContainer-home').removeClass('gradient2');
     });
 
