@@ -11,7 +11,7 @@ $(function ()
 {
     portfolioApp.contentClick();
     portfolioApp.animateContent();
-
+    portfolioApp.hoverProfile();
 });
 
 portfolioApp.contentClick = function ()
@@ -77,3 +77,14 @@ portfolioApp.contentClick = function ()
     });
 };
 
+
+portfolioApp.hoverProfile = function(){
+    $('.avatarImage').focusin(function(){
+        $(this).parent('#mainContainer-home').addClass('gradient2');
+    });
+
+    $('.avatarImage').focusout(function(){
+        $(this).parent('#mainContainer-home').removeClass('gradient2');
+    });
+
+};
