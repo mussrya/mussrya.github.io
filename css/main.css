@@ -337,5 +337,6 @@ h1, h2, h3, h4 {
 .buttonCustom:hover{
     background: #03A9F7;
     color: #fff;
+    text-decoration: none;
 }
 
