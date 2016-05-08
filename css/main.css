@@ -128,7 +128,7 @@ h1, h2, h3, h4 {
     border: 1px solid #fff;
 }
 
-#mainContainer-home-menu .navbar-default .navbar-toggle .icon-bar {
+.navbar-default .navbar-toggle .icon-bar {
     background-color: #fff!important;
 }
 
