@@ -9,23 +9,12 @@ var portfolioApp = portfolioApp || {};
 // Run the various click handlers on page load
 $(function ()
 {
-    portfolioApp.menuLinks();
     portfolioApp.contentClick();
     portfolioApp.animateContent();
 
 });
 
-portfolioApp.menuLinks = function ()
-{
-    $('#mainContainer-home-menu .nav-center a').click(function (e)
-    {
-        e.preventDefault();
-        var divBlock = $(this).attr('href');
-        $('html, body').animate({
-            scrollTop: $(divBlock).offset().top
-        }, 1000);
-    });
-}, portfolioApp.contentClick = function ()
+portfolioApp.contentClick = function ()
 {
     $('.u-hoverBlock').click(function ()
     {
