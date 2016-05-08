@@ -31,6 +31,7 @@ h1, h2, h3, h4 {
 }
 
 #mainContainer-home {
+    transition: background-color 0.5s ease;
     background: #FFA17F; /* For browsers that do not support gradients */
     background: -webkit-linear-gradient(20deg, #232526, #414345); /* For Safari 5.1 to 6.0 */
     background: -o-linear-gradient(20deg, #232526, #414345); /* For Opera 11.1 to 12.0 */
