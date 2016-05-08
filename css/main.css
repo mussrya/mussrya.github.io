@@ -263,7 +263,6 @@ h1, h2, h3, h4 {
     width: 100%;
     position: fixed;
     margin-top: -30px;
-    padding: 10px;
     z-index: 1000;
     transition: all 1s;
 }
@@ -298,10 +297,6 @@ h1, h2, h3, h4 {
     overflow: auto;
 }
 
-.u-innerBlock h1, .u-innerBlock h2, .u-innerBlock p {
-    padding: 0 100px 0 100px;
-}
-
 .u-innerBlock h1 {
     padding-top: 50px;
 }
@@ -313,12 +308,4 @@ h1, h2, h3, h4 {
 .u-thumbnail {
     background: #000;
     border: 1px solid #ccc;
-}
-
-.gradient2{
-    background-image: linear-gradient(90deg, rgb(52, 73, 94) 21%, rgb(44, 62, 80) 100%)!important;
-    background-image: -moz-linear-gradient(left, rgb(52, 73, 94) 21%, rgb(44, 62, 80) 100%)!important;
-    background-image: -webkit-linear-gradient(left, rgb(52, 73, 94) 21%, rgb(44, 62, 80) 100%)!important;
-    background-image: -o-linear-gradient(left, rgb(52, 73, 94) 21%, rgb(44, 62, 80) 100%)!important;
-    background-image: -ms-linear-gradient(left, rgb(52, 73, 94) 21%, rgb(44, 62, 80) 100%)!important;
 }
