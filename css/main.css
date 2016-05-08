@@ -87,16 +87,17 @@ h1, h2, h3, h4 {
 }
 
 @media (max-width: 650px){
-    #mainContainer-home h1, #mainContainer-about h1{
+    #mainContainer-home h1{
+        font-size: 30px!important;
+    }
+
+    #mainContainer-about .u-hoverBlock h1{
         font-size: 20px!important;
-    }
-
-    #mainContainer-about h1{
         margin-top: 24px!important;
-        padding-top: 10px!important;
+        padding-top: 15px!important;
     }
 
-    #mainContainer-home h4{
+    #mainContainer-home .u-hoverBlock h4{
         font-size: 15px!important;
     }
 
