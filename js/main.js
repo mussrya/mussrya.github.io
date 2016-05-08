@@ -51,7 +51,12 @@ portfolioApp.contentClick = function ()
     setTimeout(function ()
     {
         $('.u-portfolioEntry').html(
-            '<div class="u-innerBlock"><div class="row-fluid"><span class="u-closeButton u-animate">X</span><h1 class="u-animate">' + title + '</h1> <h3 class="u-animate">' + skills + '</h3> <p class="u-marginTop u-animate">' + content + '</p></div><div class="row-fluid u-marginTop"><div class="col-lg-12 u-animate"><div class="u-thumbnail"><img class="img-responsive" src="/portfolio/img/'+port+'/JPEG/1.jpg"></div></div><div class="col-lg-12 u-animate"><div class="u-thumbnail"><img class="img-responsive" src="/portfolio/img/'+port+'/JPEG/2.jpg"></div></div><div class="col-lg-12 u-animate"><div class="u-thumbnail"><img class="img-responsive" src="/portfolio/img/'+port+'/JPEG/3.jpg"></div></div></div></div>');
+            '<div class="u-innerBlock"><div class="row-fluid">\<' +
+            'span class="u-closeButton u-animate">X</span>\ ' +
+            '<div class="pull-left menuBlock"><h1 class="u-animate">' + title + '</h1> \<' +
+            'h3 class="u-animate">' + skills + '</h3> <p class="u-marginTop u-animate">' + content + '</p>\ ' +
+            '</div></div>\ ' +
+            '<div class="row-fluid u-marginTop"><div class="col-lg-12 u-animate"><div class="u-thumbnail"><img class="img-responsive" src="/portfolio/img/' + port + '/JPEG/1.jpg"></div></div><div class="col-lg-12 u-animate"><div class="u-thumbnail"><img class="img-responsive" src="/portfolio/img/' + port + '/JPEG/2.jpg"></div></div><div class="col-lg-12 u-animate"><div class="u-thumbnail"><img class="img-responsive" src="/portfolio/img/' + port + '/JPEG/3.jpg"></div></div></div></div>');
         $('.u-closeButton').unbind('click').bind('click', function ()
         {
             portfolioApp.removeContent();
@@ -78,12 +83,15 @@ portfolioApp.contentClick = function ()
 };
 
 
-portfolioApp.hoverProfile = function(){
-    $('.avatarImage').mouseover(function(){
+portfolioApp.hoverProfile = function ()
+{
+    $('.avatarImage').mouseover(function ()
+    {
         $(this).parent('#mainContainer-home').addClass('gradient2');
     });
 
-    $('.avatarImage').mouseout(function(){
+    $('.avatarImage').mouseout(function ()
+    {
         $(this).parent('#mainContainer-home').removeClass('gradient2');
     });
 
