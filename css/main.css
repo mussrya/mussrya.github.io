@@ -129,7 +129,7 @@ h1, h2, h3, h4 {
         right: 30px;
     }
 
-    .u-thumbnail:first-of-type{
+    .u-thumbnail:first-child{
         margin-top: inherit;
     }
 }
@@ -344,7 +344,7 @@ h1, h2, h3, h4 {
     margin-bottom: 10px;
 }
 
-.u-thumbnail:first-of-type{
+.u-thumbnail:first-child{
     margin-top: 100px;
 }
 
