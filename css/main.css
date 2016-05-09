@@ -214,12 +214,17 @@ h1, h2, h3, h4 {
 
 #mainContainer-about {
     clear: both;
-    padding: 30px;
+    padding: 0 30px;
 
 }
 
 #mainContainer-about h1 {
     font-size: 50px;
+    margin: 0 0 10px 0;
+}
+
+#mainContainer-about p{
+    margin-bottom: 20px;
 }
 
 .menuBlock{
