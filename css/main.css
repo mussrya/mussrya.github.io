@@ -318,7 +318,7 @@ h1, h2, h3, h4 {
 }
 
 .u-thumbnail {
-    background: #000;
+    clear: both;
     border: 1px solid #ccc;
     margin-bottom: 10px;
 }
