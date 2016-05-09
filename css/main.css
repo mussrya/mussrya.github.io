@@ -363,7 +363,7 @@ h1, h2, h3, h4 {
 }
 
 .buttonCustom{
-    -webkit-transition: all 2s;
+    -webkit-transition: all 1s;
     transition: all 2s;
     border: 2px solid #633DB6;
     padding: 4px 30px;
