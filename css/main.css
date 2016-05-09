@@ -179,9 +179,10 @@ h1, h2, h3, h4 {
 
 #mainContainer-divider {
     background: url('/portfolio/img/header.png') repeat-x bottom;
-    margin-top: -300px;
-    height: 300px;
+    margin-top: -250px;
+    height: 250px;
     width: 100%;
+    padding-top: 48px;
 }
 
 #mainContainer-home .avatarImage {
