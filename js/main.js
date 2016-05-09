@@ -71,6 +71,6 @@ portfolioApp.contentClick = function ()
         setTimeout(function ()
         {
             that.removeClass('u-animate').addClass('u-animated');
-        }, i * 300)
+        }, i * 200)
     });
 };
