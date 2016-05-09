@@ -16,6 +16,9 @@
     <!-- CSS -->
     <link rel="stylesheet" href="/portfolio/css/main.css">
 
+    <!-- FONTS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+
 </head>
 <body>
 <div id="mainContainer">
@@ -26,7 +29,7 @@
                 <!-- Brand and toggle get grouped for better mobile display -->
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-                            data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                            data-target="#nav-collapsed" aria-expanded="false">
                         <span class="sr-only">Toggle navigation</span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
@@ -36,23 +39,22 @@
                 </div>
 
                 <!-- Collect the nav links, forms, and other content for toggling -->
-                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                    <ul class="nav navbar-nav nav-center" style="text-align:center;">
-                        <li><a class="" href="#mainContainer-home">HOME</a></li>
-                        <li><a href="#mainContainer-about">ABOUT</a></li>
-                        <li><a href="#mainContainer-blog">BLOG</a></li>
+                <div class="collapse navbar-collapse" id="nav-collapsed">
+                    <ul class="nav navbar-nav nav-center">
+                        <li><a href="https://uk.linkedin.com/in/ryanmusselwhite"><i class="fa fa-linkedin"></i></a></li>
+                        <li><a href="https://twitter.com/ryanmusselwhite"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="https://medium.com/@ryanmusselwhite"><i class="fa fa-medium"></i></a></li>
                     </ul>
-
-                    <ul class="nav navbar-nav text-center navbar-right">
+                    <!-- <ul class="nav navbar-nav text-center navbar-right">
                         <li><a href="#" class="bold">GET IN TOUCH</a></li>
 
-                    </ul>
+                    </ul> -->
                 </div>
                 <!-- /.navbar-collapse -->
             </div>
             <!-- /.container-fluid -->
         </nav>
-        <img class="avatarImage center-block u-animate" src="/img/profile.png">
+        <img class="avatarImage center-block u-animate" src="/portfolio/img/profile-1.jpg">
 
         <div class="u-animate"
              style="margin:0 auto;background: -webkit-linear-gradient(bottom, rgba(255,255,255,0), rgba(255,255,255, 1)); height:100px; width:2px;"></div>
@@ -62,7 +64,7 @@
     </div>
     <div id="mainContainer-divider">
         <div class="u-animate"
-             style="margin:0 auto; background: -webkit-linear-gradient(top, rgba(255,255,255,0), rgba(255,255,255, 1)); height:300px; width:2px;"></div>
+             style="margin: 0 auto; background: -webkit-linear-gradient(top, rgba(255,255,255,0), rgba(255,255,255, 1)); height: 160px; width: 2px;"></div>
     </div>
 
     <div id="mainContainer-about">
@@ -100,25 +102,12 @@
             </div></a>
         </div>
     </div>
-    <div id="mainContainer-blog">
-        <h1 class="text-center u-animate">Blog</h1>
-        <div class="container-fluid">
-            <div class="row-fluid">
-                <script async src="https://static.medium.com/embed.js"></script>
-                <a data-width="100%" data-border="false" class="m-story" data-collapsed="true"
-                   href="https://medium.com/@ryanmusselwhite/why-i-quit-my-job-at-a-large-tech-firm-d525392373a8">Why I
-                    Quit My Job At a Large Tech Firm</a>
-            </div>
-        </div>
-    </div>
 </div>
 
 
 <!-- SCRIPT LOAD DEFERRING -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script
-<script src="/portfolio/js/includes/bootstrap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 <script src="/portfolio/js/main.js"></script>
-
-
 </body>
 </html>

@@ -17,10 +17,11 @@ html, body {
 
 #mainContainer {
     width: 90%;
+    max-width:1200px;
     margin: 0 auto;
     margin-top: 30px;
     box-shadow: 0 4px 80px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    overflow: none;
+    overflow: hidden;
     background: #fff;
     margin-bottom: 30px;
 }
@@ -29,16 +30,34 @@ h1, h2, h3, h4 {
     font-weight: 300;
 }
 
+
+@-webkit-keyframes Gradient {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes Gradient {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes Gradient {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
+
 #mainContainer-home {
     background: #FFA17F; /* For browsers that do not support gradients */
-    background: -webkit-linear-gradient(20deg, #232526, #414345); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(20deg, #232526, #414345); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(20deg, #232526, #414345); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(20deg, #232526, #414345); /* Standard syntax */
+    background: linear-gradient(270deg, #C0392B, #E57D22, #2980B9, #2C3F51, #232526, #414345);
+    background-size: 600% 600%;
+    -webkit-animation: Gradient 30s ease infinite;
+    -moz-animation: Gradient 30s ease infinite;
+    animation: Gradient 30s ease infinite;
     width: 100%;
-    height: 50%;
     color: #fff;
-    min-height: 700px;
+    height: 620px;
 }
 
 #mainContainer-home-menu {
@@ -58,10 +77,64 @@ h1, h2, h3, h4 {
 }
 
 @media (min-width: 768px) {
+
     #mainContainer-home-menu .navbar-right {
         position: absolute;
         right: 30px;
         top: 20px;
+    }
+}
+
+@media (max-width: 650px){
+
+
+    #mainContainer-home{
+        height:600px!important;
+    }
+
+    #mainContainer-about h1{
+        margin-top:0!important;
+    }
+
+    #mainContainer-home h1{
+        font-size: 30px!important;
+    }
+
+    #mainContainer-about .u-hoverBlock h1{
+        font-size: 20px!important;
+        margin-top: 24px!important;
+        padding-top: 15px!important;
+    }
+
+    #mainContainer-home .u-hoverBlock h4{
+        font-size: 15px!important;
+    }
+
+    .u-hoverBlock p{
+        font-size: 14px!important;
+        padding-bottom: 12px!important;
+    }
+
+    #mainContainer-home-menu .nav-center{
+        text-align: center!important;
+        font-size: 24px!important;
+    }
+
+}
+
+@media (max-width: 992px){
+    .menuBlock{
+        position: relative!important;
+        background: none!important;
+        border: none!important;
+    }
+
+    .u-portfolioEntry{
+        background: #fff;
+    }
+
+    .u-thumbnail:first-child{
+        margin-top: 30px!important;
     }
 }
 
@@ -77,11 +150,15 @@ h1, h2, h3, h4 {
 }
 
 #mainContainer-home-menu .navbar-toggle {
-    border: 0;
+    border: 1px solid #fff;
 }
 
-#mainContainer-home-menu .navbar-default .navbar-toggle .icon-bar {
-    background-color: #fff;
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #fff!important;
+}
+
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus{
+    background: none;
 }
 
 #mainContainer-home-menu .navbar-collapse a {
@@ -95,7 +172,7 @@ h1, h2, h3, h4 {
 #mainContainer-home-menu .nav-center {
     float: none;
     margin: 0 auto;
-    width: 220px;
+    width: 129px;
 }
 
 #mainContainer-home-menu a:hover {
@@ -109,10 +186,11 @@ h1, h2, h3, h4 {
 }
 
 #mainContainer-divider {
-    background: url('/img/header.png') repeat-x bottom;
-    margin-top: -300px;
-    height: 300px;
+    background: url('/portfolio/img/header.png') repeat-x bottom;
+    margin-top: -250px;
+    height: 250px;
     width: 100%;
+    padding-top: 48px;
 }
 
 #mainContainer-home .avatarImage {
@@ -134,14 +212,31 @@ h1, h2, h3, h4 {
     opacity: 1;
 }
 
-#mainContainer-about, #mainContainer-blog {
+#mainContainer-about {
     clear: both;
-    padding: 30px;
+    padding: 0 30px;
 
 }
 
-#mainContainer-about h1, #mainContainer-blog h1 {
+#mainContainer-about h1 {
     font-size: 50px;
+    margin: 0 0 10px 0;
+}
+
+#mainContainer-about p{
+    margin-bottom: 20px;
+}
+
+.menuBlock{
+    position: fixed;
+    background: #fff;
+    margin: 0;
+    height: 100%;
+    border-right: 1px solid #CCCCCC;
+}
+
+.menuBlock h1{
+    margin-top: 90px;
 }
 
 .u-hoverBlock {
@@ -172,36 +267,36 @@ h1, h2, h3, h4 {
 }
 
 .u-hoverBlock h1 {
-    margin-bottom: 0px;
+    margin: 20px 0 0 0px!important;
 }
 
 .portfolio-1 {
-    background: #000 url('/img/port-1/1.png') top center;
+    background: #000 url('/portfolio/img/port-1/JPEG/1.jpg') top center;
     background-size: cover;
 }
 
 .portfolio-2 {
-    background: #000 url('/img/port-2/1.png');
+    background: #000 url('/portfolio/img/port-2/JPEG/1.jpg');
     background-size: cover;
 }
 
 .portfolio-3{
-    background: #000 url('/img/port-3/1.png');
+    background: #000 url('/portfolio/img/port-3/JPEG/1.jpg');
     background-size: cover;
 }
 
 .portfolio-4{
-    background: #000 url('/img/port-4/1.png');
+    background: #000 url('/portfolio/img/port-4/JPEG/1.jpg');
     background-size: cover;
 }
 
 .portfolio-5{
-    background: #000 url('/img/port-5/1.png');
+    background: #000 url('/portfolio/img/port-5/1.png');
     background-size: cover;
 }
 
 .portfolio-6{
-    background: #000 url('/img/port-6/1.png');
+    background: #000 url('/portfolio/img/port-6/1.png');
     background-size: cover;
 }
 
@@ -211,9 +306,9 @@ h1, h2, h3, h4 {
     width: 100%;
     position: fixed;
     margin-top: -30px;
-    padding: 10px;
     z-index: 1000;
     transition: all 1s;
+    overflow: scroll;
 }
 
 .u-portfolioEntry.inactive {
@@ -227,12 +322,15 @@ h1, h2, h3, h4 {
 }
 
 .u-closeButton {
+    z-index: 100;
     font-weight: bold;
     font-size: 28px;
-    margin: 50px 20px 0;
+    margin: 50px 0 0 0;
     cursor: pointer;
     transition: all 0.5s;
-    float: right;
+    position: absolute;
+    right: 30px;
+    top: 0;
 }
 
 .u-closeButton:hover {
@@ -246,10 +344,6 @@ h1, h2, h3, h4 {
     overflow: auto;
 }
 
-.u-innerBlock h1, .u-innerBlock h2, .u-innerBlock p {
-    padding: 0 100px 0 100px;
-}
-
 .u-innerBlock h1 {
     padding-top: 50px;
 }
@@ -259,6 +353,30 @@ h1, h2, h3, h4 {
 }
 
 .u-thumbnail {
-    background: #000;
+    clear: both;
     border: 1px solid #ccc;
+    margin-bottom: 10px;
 }
+
+.u-thumbnail:first-child{
+    margin-top: 100px;
+}
+
+.buttonCustom{
+    -webkit-transition: all 1s;
+    transition: all 2s;
+    border: 2px solid #633DB6;
+    padding: 4px 30px;
+    border-radius: 30px;
+    margin-top: 20px;
+    display: block;
+    text-decoration: none;
+    color: #633DB6;
+}
+
+.buttonCustom:hover{
+    background: #633DB6;
+    color: #fff;
+    text-decoration: none;
+}
+
