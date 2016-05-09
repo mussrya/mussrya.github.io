@@ -186,7 +186,7 @@ h1, h2, h3, h4 {
 }
 
 #mainContainer-divider {
-    background: url('/portfolio/img/header.png') repeat-x bottom;
+    background: url('/img/header.png') repeat-x bottom;
     margin-top: -250px;
     height: 250px;
     width: 100%;
@@ -271,32 +271,32 @@ h1, h2, h3, h4 {
 }
 
 .portfolio-1 {
-    background: #000 url('/portfolio/img/port-1/JPEG/1.jpg') top center;
+    background: #000 url('/img/port-1/JPEG/1.jpg') top center;
     background-size: cover;
 }
 
 .portfolio-2 {
-    background: #000 url('/portfolio/img/port-2/JPEG/1.jpg');
+    background: #000 url('/img/port-2/JPEG/1.jpg');
     background-size: cover;
 }
 
 .portfolio-3{
-    background: #000 url('/portfolio/img/port-3/JPEG/1.jpg');
+    background: #000 url('/img/port-3/JPEG/1.jpg');
     background-size: cover;
 }
 
 .portfolio-4{
-    background: #000 url('/portfolio/img/port-4/JPEG/1.jpg');
+    background: #000 url('/img/port-4/JPEG/1.jpg');
     background-size: cover;
 }
 
 .portfolio-5{
-    background: #000 url('/portfolio/img/port-5/1.png');
+    background: #000 url('/img/port-5/1.png');
     background-size: cover;
 }
 
 .portfolio-6{
-    background: #000 url('/portfolio/img/port-6/1.png');
+    background: #000 url('/img/port-6/1.png');
     background-size: cover;
 }
 
