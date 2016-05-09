@@ -49,7 +49,7 @@ portfolioApp.contentClick = function ()
     }, 100);
     setTimeout(function ()
     {
-        $('.u-portfolioEntry').html('<div class="row-fluid"><span class="u-closeButton u-animate">X</span><div class="col-sm-12 col-md-3" style="padding: 0;"><div class="menuBlock col-md-3"><h1 class="u-animate">'+title+'</h1><h3 class="u-animate">'+skills+'</h3><p class="u-marginTop u-animate">'+content+'</p><a href="'+link+'" class="u-animate buttonCustom">VIEW</a></div></div><div class="col-sm-12 col-md-9"><div class="u-thumbnail u-animate"><img class="img-responsive" src="/portfolio/img/'+port+'/JPEG/1.jpg"></div><div class="u-thumbnail u-animate"><img class="img-responsive" src="/portfolio/img/'+port+'/JPEG/1.jpg"></div><div class="u-thumbnail u-animate"><img class="img-responsive" src="/portfolio/img/'+port+'/JPEG/1.jpg"></div></div></div>');
+        $('.u-portfolioEntry').html('<div class="row-fluid"><span class="u-closeButton u-animate">X</span><div class="col-sm-12 col-md-3" style="padding: 0;"><div class="menuBlock u-animate col-md-3"><h1 class="u-animate">'+title+'</h1><h3 class="u-animate">'+skills+'</h3><p class="u-marginTop u-animate">'+content+'</p><a href="'+link+'" class="u-animate buttonCustom">VIEW</a></div></div><div class="col-sm-12 col-md-9"><div class="u-thumbnail u-animate"><img class="img-responsive" src="/portfolio/img/'+port+'/JPEG/1.jpg"></div><div class="u-thumbnail u-animate"><img class="img-responsive" src="/portfolio/img/'+port+'/JPEG/1.jpg"></div><div class="u-thumbnail u-animate"><img class="img-responsive" src="/portfolio/img/'+port+'/JPEG/1.jpg"></div></div></div>');
         $('.u-closeButton').unbind('click').bind('click', function ()
         {
             portfolioApp.removeContent();
