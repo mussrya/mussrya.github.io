@@ -130,7 +130,7 @@ h1, h2, h3, h4 {
     }
 
     .u-thumbnail:first-child{
-        margin-top: inherit;
+        margin-top: 30px!important;
     }
 }
 
@@ -311,6 +311,7 @@ h1, h2, h3, h4 {
 }
 
 .u-closeButton {
+    z-index: 100;
     font-weight: bold;
     font-size: 28px;
     margin: 50px 0 0 0;
