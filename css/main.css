@@ -123,6 +123,15 @@ h1, h2, h3, h4 {
     .u-portfolioEntry{
         background: #fff;
     }
+
+    .u-closeButton{
+        position: absolute;
+        right: 30px;
+    }
+
+    .u-thumbnail:first-of-type{
+        margin-top: inherit;
+    }
 }
 
 #mainContainer-home-menu .navbar-brand {
@@ -333,6 +342,10 @@ h1, h2, h3, h4 {
     clear: both;
     border: 1px solid #ccc;
     margin-bottom: 10px;
+}
+
+.u-thumbnail:first-of-type{
+    margin-top: 100px;
 }
 
 .buttonCustom{
