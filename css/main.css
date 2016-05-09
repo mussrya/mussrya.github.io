@@ -267,7 +267,7 @@ h1, h2, h3, h4 {
 }
 
 .u-hoverBlock h1 {
-    margin-bottom: 0px;
+    margin: 20px 0 0 0px!important;
 }
 
 .portfolio-1 {
