@@ -118,6 +118,7 @@ h1, h2, h3, h4 {
     .menuBlock{
         position: relative!important;
         background: none!important;
+        border: none!important;
     }
 
     .u-portfolioEntry{
@@ -217,6 +218,7 @@ h1, h2, h3, h4 {
     background: #fff;
     margin: 0;
     height: 100%;
+    border-right: 1px solid #CCCCCC;
 }
 
 .menuBlock h1{
@@ -314,6 +316,7 @@ h1, h2, h3, h4 {
     transition: all 0.5s;
     position: absolute;
     right: 30px;
+    top: 0;
 }
 
 .u-closeButton:hover {
