@@ -17,7 +17,7 @@ html, body {
 
 #mainContainer {
     width: 90%;
-    max-width:1200px;
+    max-width: 1200px;
     margin: 0 auto;
     margin-top: 30px;
     box-shadow: 0 4px 80px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -30,23 +30,41 @@ h1, h2, h3, h4 {
     font-weight: 300;
 }
 
-
 @-webkit-keyframes Gradient {
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
-}
-@-moz-keyframes Gradient {
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
-}
-@keyframes Gradient {
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
+    0% {
+        background-position: 0% 50%
+    }
+    50% {
+        background-position: 100% 50%
+    }
+    100% {
+        background-position: 0% 50%
+    }
 }
 
+@-moz-keyframes Gradient {
+    0% {
+        background-position: 0% 50%
+    }
+    50% {
+        background-position: 100% 50%
+    }
+    100% {
+        background-position: 0% 50%
+    }
+}
+
+@keyframes Gradient {
+    0% {
+        background-position: 0% 50%
+    }
+    50% {
+        background-position: 100% 50%
+    }
+    100% {
+        background-position: 0% 50%
+    }
+}
 
 #mainContainer-home {
     background: #FFA17F; /* For browsers that do not support gradients */
@@ -85,56 +103,55 @@ h1, h2, h3, h4 {
     }
 }
 
-@media (max-width: 650px){
+@media (max-width: 650px) {
 
-
-    #mainContainer-home{
-        height:600px!important;
+    #mainContainer-home {
+        height: 600px !important;
     }
 
-    #mainContainer-about h1{
-        margin-top:0!important;
+    #mainContainer-about h1 {
+        margin-top: 0 !important;
     }
 
-    #mainContainer-home h1{
-        font-size: 30px!important;
+    #mainContainer-home h1 {
+        font-size: 30px !important;
     }
 
-    #mainContainer-about .u-hoverBlock h1{
-        font-size: 20px!important;
-        margin-top: 24px!important;
-        padding-top: 15px!important;
+    #mainContainer-about .u-hoverBlock h1 {
+        font-size: 20px !important;
+        margin-top: 24px !important;
+        padding-top: 15px !important;
     }
 
-    #mainContainer-home .u-hoverBlock h4{
-        font-size: 15px!important;
+    #mainContainer-home .u-hoverBlock h4 {
+        font-size: 15px !important;
     }
 
-    .u-hoverBlock p{
-        font-size: 14px!important;
-        padding-bottom: 12px!important;
+    .u-hoverBlock p {
+        font-size: 14px !important;
+        padding-bottom: 12px !important;
     }
 
-    #mainContainer-home-menu .nav-center{
-        text-align: center!important;
-        font-size: 24px!important;
+    #mainContainer-home-menu .nav-center {
+        text-align: center !important;
+        font-size: 24px !important;
     }
 
 }
 
-@media (max-width: 992px){
-    .menuBlock{
-        position: relative!important;
-        background: none!important;
-        border: none!important;
+@media (max-width: 992px) {
+    .menuBlock {
+        position: relative !important;
+        background: none !important;
+        border: none !important;
     }
 
-    .u-portfolioEntry{
+    .u-portfolioEntry {
         background: #fff;
     }
 
-    .u-thumbnail:first-child{
-        margin-top: 30px!important;
+    .u-thumbnail:first-child {
+        margin-top: 30px !important;
     }
 }
 
@@ -154,10 +171,10 @@ h1, h2, h3, h4 {
 }
 
 .navbar-default .navbar-toggle .icon-bar {
-    background-color: #fff!important;
+    background-color: #fff !important;
 }
 
-.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus{
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
     background: none;
 }
 
@@ -223,11 +240,11 @@ h1, h2, h3, h4 {
     margin: 0 0 10px 0;
 }
 
-#mainContainer-about p{
+#mainContainer-about p {
     margin-bottom: 20px;
 }
 
-.menuBlock{
+.menuBlock {
     position: fixed;
     background: #fff;
     margin: 0;
@@ -235,21 +252,21 @@ h1, h2, h3, h4 {
     border-right: 1px solid #CCCCCC;
 }
 
-.menuBlock h1{
+.menuBlock h1 {
     margin-top: 90px;
 }
 
 .u-hoverBlock {
     padding: 0;
     margin: 0 0 20px 0;
-    cursor:pointer;
+    cursor: pointer;
     height: 300px;
     width: 100%;
     opacity: 1;
     -webkit-transition: all 2s;
     transition: all 2s;
     padding-top: 205px;
-    border:1px solid #ccc;
+    border: 1px solid #ccc;
 }
 
 .u-hoverBlock:hover {
@@ -267,7 +284,7 @@ h1, h2, h3, h4 {
 }
 
 .u-hoverBlock h1 {
-    margin: 20px 0 0 0px!important;
+    margin: 20px 0 0 0px !important;
 }
 
 .portfolio-1 {
@@ -280,22 +297,22 @@ h1, h2, h3, h4 {
     background-size: cover;
 }
 
-.portfolio-3{
+.portfolio-3 {
     background: #000 url('/img/port-3/JPEG/1.jpg');
     background-size: cover;
 }
 
-.portfolio-4{
+.portfolio-4 {
     background: #000 url('/img/port-4/JPEG/1.jpg');
     background-size: cover;
 }
 
-.portfolio-5{
+.portfolio-5 {
     background: #000 url('/img/port-5/1.png');
     background-size: cover;
 }
 
-.portfolio-6{
+.portfolio-6 {
     background: #000 url('/img/port-6/1.png');
     background-size: cover;
 }
@@ -358,11 +375,11 @@ h1, h2, h3, h4 {
     margin-bottom: 10px;
 }
 
-.u-thumbnail:first-child{
+.u-thumbnail:first-child {
     margin-top: 100px;
 }
 
-.buttonCustom{
+.buttonCustom {
     -webkit-transition: all 1s;
     transition: all 2s;
     border: 2px solid #633DB6;
@@ -374,7 +391,7 @@ h1, h2, h3, h4 {
     color: #633DB6;
 }
 
-.buttonCustom:hover{
+.buttonCustom:hover {
     background: #633DB6;
     color: #fff;
     text-decoration: none;
