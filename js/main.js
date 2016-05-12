@@ -19,7 +19,7 @@ portfolioApp.contentClick = function ()
     {
         switch ($(this).data('entry')) {
             case 1:
-                portfolioApp.outputContent('ObjectiveManager', 'JavaScript OO, jQuery, CSS3, HTML5, CSS3 Animation, Responsive, BootStrap, GIT',
+                portfolioApp.outputContent('Objective Manager', 'JavaScript OO, jQuery, CSS3, HTML5, CSS3 Animation, Responsive, BootStrap, GIT',
                     'After working for ObjectiveManager on their core product, I was asked to build their marketing site using up to date technologies, with the aim to keep it as lightweight as possible so that non front-end developers could still easily maintain the code if required.',
                     'port-1', 'https://about.objectivemanager.com');
                 break;
