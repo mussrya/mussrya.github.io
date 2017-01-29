@@ -55,14 +55,14 @@ portfolioApp.contentClick = function ()
             portfolioApp.removeContent();
         });
         portfolioApp.animateContent();
-    }, 700);
+    }, 300);
 }, portfolioApp.removeContent = function ()
 {
     $('.u-portfolioEntry').removeClass('active').addClass('inactive');
     setTimeout(function ()
     {
         $('.u-portfolioEntry').remove()
-    }, 1000);
+    }, 500);
 }, portfolioApp.animateContent = function ()
 {
     $('.u-animate').each(function (i)
@@ -71,6 +71,6 @@ portfolioApp.contentClick = function ()
         setTimeout(function ()
         {
             that.removeClass('u-animate').addClass('u-animated');
-        }, i * 200)
+        }, i * 100)
     });
 };
