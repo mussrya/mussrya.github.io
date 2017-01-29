@@ -1,6 +1,5 @@
 /*
     Ryan Musselwhite's Portfolio CSS
-
 */
 
 html, body {
@@ -200,14 +199,6 @@ h1, h2, h3, h4 {
 
 .u-bold {
     font-weight: 700 !important;
-}
-
-#mainContainer-divider {
-    background: url('/img/header.png') repeat-x bottom;
-    margin-top: -250px;
-    height: 250px;
-    width: 100%;
-    padding-top: 48px;
 }
 
 #mainContainer-home .avatarImage {
