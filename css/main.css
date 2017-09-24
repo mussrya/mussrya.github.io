@@ -86,7 +86,6 @@ h1, h2, h3, h4 {
     -webkit-animation: Gradient 20s linear infinite;
     -moz-animation: Gradient 20s linear infinite;
     animation: Gradient 20s linear infinite;
-    width: 100%;
     color: #fff;
     height: 620px;
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 83%);
@@ -394,9 +393,6 @@ h1, h2, h3, h4 {
 
     .mainContainer-home {
         height: 500px;
-        /* For mobile as the gradient gets clipped */
-        width: 101%;
-        overflow: hidden;
     }
 
     .mainContainer-about h1 {
