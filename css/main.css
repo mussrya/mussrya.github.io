@@ -2,6 +2,7 @@
     Ryan Musselwhite's Portfolio CSS
 */
 
+/* Core Elements */
 html, body {
     margin: 0;
     padding: 0;
@@ -9,26 +10,17 @@ html, body {
     height: 100%;
     font-family: Lato, Helvetica;
     background: #232526; /* fallback for old browsers */
-    background: -webkit-linear-gradient(to left, #979fa3, #6d7174); /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to left, #979fa3, #6d7174); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: -webkit-linear-gradient(to left, #979fa3, #6d7174);
+    background: linear-gradient(to left, #979fa3, #6d7174);
+    color: #434c5b;
 
-}
-
-#mainContainer {
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
-    margin-top: 30px;
-    box-shadow: 0 4px 80px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    overflow: hidden;
-    background: #fff;
-    margin-bottom: 30px;
 }
 
 h1, h2, h3, h4 {
     font-weight: 300;
 }
 
+/* Gradient Animation & Animation */
 @-webkit-keyframes Gradient {
     0% {
         background-position: 0% 50%
@@ -65,13 +57,37 @@ h1, h2, h3, h4 {
     }
 }
 
-#mainContainer-home {
-    background: #FFA17F; /* For browsers that do not support gradients */
-    background: linear-gradient(270deg, #C0392B, #E57D22, #2980B9, #2C3F51, #232526, #414345);
+.u-animate {
+    opacity: 0;
+}
+
+.u-animated {
+    -webkit-transition: all 1s;
+    transition: all 1s;
+    opacity: 1;
+}
+
+/* Main Container */
+
+.mainContainer {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 30px;
+    box-shadow: 0 4px 80px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    overflow: hidden;
+    background: #fff;
+    margin-bottom: 30px;
+}
+
+/* Home Container */
+.mainContainer-home {
+    background: #FFA17F;
+    background: linear-gradient(30deg, #C0392B, #E57D22, #2980B9, #2C3F51, #232526, #414345);
     background-size: 600% 600%;
-    -webkit-animation: Gradient 30s ease infinite;
-    -moz-animation: Gradient 30s ease infinite;
-    animation: Gradient 30s ease infinite;
+    -webkit-animation: Gradient 20s linear infinite;
+    -moz-animation: Gradient 20s linear infinite;
+    animation: Gradient 20s linear infinite;
     width: 100%;
     color: #fff;
     height: 620px;
@@ -79,123 +95,54 @@ h1, h2, h3, h4 {
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 83%);
 }
 
-#mainContainer-home-menu {
+.mainContainer-home-menu {
     background: none;
     border: none;
     padding-top: 20px;
 }
 
-#mainContainer-home h1 {
+.mainContainer-home h1 {
     font-weight: 100;
     font-size: 55px;
-    margin-top: 0px;
+    margin-top: 0;
 }
 
-#mainContainer-home h4 {
+.mainContainer-home h4 {
     font-weight: 300;
 }
 
-@media (min-width: 768px) {
-
-    #mainContainer-home-menu .navbar-right {
-        position: absolute;
-        right: 30px;
-        top: 20px;
-    }
+.navbar-default .navbar-nav > li > a {
+    opacity: 0.8;
 }
 
-@media (max-width: 650px) {
-
-    #mainContainer-home {
-        height: 600px !important;
-    }
-
-    #mainContainer-about h1 {
-        margin-top: 0 !important;
-    }
-
-    #mainContainer-home h1 {
-        font-size: 30px !important;
-    }
-
-    #mainContainer-about .u-hoverBlock h1 {
-        font-size: 20px !important;
-        margin-top: 24px !important;
-        padding-top: 15px !important;
-    }
-
-    #mainContainer-home .u-hoverBlock h4 {
-        font-size: 15px !important;
-    }
-
-    .u-hoverBlock p {
-        font-size: 14px !important;
-        padding-bottom: 12px !important;
-    }
-
-    #mainContainer-home-menu .nav-center {
-        text-align: center !important;
-        font-size: 24px !important;
-    }
-
+.navbar-default .navbar-nav > li > a, .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-brand:hover {
+    color: #FFF;
 }
 
-@media (max-width: 992px) {
-    .menuBlock {
-        position: relative !important;
-        background: none !important;
-        border: none !important;
-    }
-
-    .u-portfolioEntry {
-        background: #fff;
-    }
-
-    .u-thumbnail:first-child {
-        margin-top: 30px !important;
-    }
+.navbar > .container-fluid .navbar-brand {
+    margin-left: 0;
 }
 
-#mainContainer-home-menu .navbar-brand {
-    color: #FFF !important;
+.navbar-default .navbar-nav > li > a:hover {
+    opacity: 1;
+}
+
+.navbar-default .navbar-brand {
+    color: #FFF;
     font-weight: bold;
     border-bottom: 3px solid #fff;
-    width: auto;
     padding: 0;
-    margin: 0;
     height: auto;
-    margin: 10px 0px 0px 20px !important;
+    margin-left: 20px;
 }
 
-#mainContainer-home-menu .navbar-toggle {
-    border: 1px solid #fff;
-}
-
-.navbar-default .navbar-toggle .icon-bar {
-    background-color: #fff !important;
-}
-
-.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
-    background: none;
-}
-
-#mainContainer-home-menu .navbar-collapse a {
-    color: #fff;
-    opacity: 0.8;
-    font-weight: 100;
-    -webkit-transition: opacity 1s;
-    transition: opacity 1s;
-}
-
-#mainContainer-home-menu .nav-center {
+.mainContainer-home-menu .nav-center {
     float: none;
     margin: 0 auto;
     width: 129px;
 }
 
-#mainContainer-home-menu a:hover {
-    -webkit-transition: opacity 1s;
-    transition: opacity 1s;
+.mainContainer-home-menu a:hover {
     opacity: 1;
 }
 
@@ -203,7 +150,14 @@ h1, h2, h3, h4 {
     font-weight: 700 !important;
 }
 
-#mainContainer-home .avatarImage {
+.mainContainer-home .avatar {
+    margin: 0 auto;
+    background: -webkit-linear-gradient(bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1));
+    height: 100px;
+    width: 2px;
+}
+
+.mainContainer-home .avatarImage {
     height: 100px;
     width: 100px;
     border-radius: 50px;
@@ -212,29 +166,30 @@ h1, h2, h3, h4 {
     background: #fff;
 }
 
-.u-animate {
-    opacity: 0;
-}
+/* About Section */
 
-.u-animated {
-    -webkit-transition: all 2s;
-    transition: all 2s;
-    opacity: 1;
-}
-
-#mainContainer-about {
+.mainContainer-about {
     clear: both;
-    padding: 0 30px;
+    padding: 0 30px 60px 30px;
 
 }
 
-#mainContainer-about h1 {
-    font-size: 50px;
-    margin: 0 0 10px 0;
+.mainContainer-about h1 {
+    font-size: 40px;
+    padding-top: 7px;
 }
 
-#mainContainer-about p {
+.mainContainer-about h1:not(:first-child) {
+    margin: 40px 0 40px 0;
+}
+
+.mainContainer-about > h1:first-child {
+    margin: 10px 0 40px 0;
+}
+
+.mainContainer-about p {
     margin-bottom: 20px;
+    padding: 5px 20px;
 }
 
 .menuBlock {
@@ -249,76 +204,95 @@ h1, h2, h3, h4 {
     margin-top: 90px;
 }
 
+/* Cards */
+
 .u-hoverBlock {
-    padding: 0;
     margin: 0 0 20px 0;
     cursor: pointer;
-    height: 300px;
-    width: 100%;
+    height: 320px;
     opacity: 1;
-    -webkit-transition: all 2s;
-    transition: all 2s;
-    padding-top: 205px;
+    -webkit-transition: all 1s;
+    transition: all 1s;
+    padding: 227px 0 0 0;
     border: 1px solid #ccc;
+    -webkit-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .2), 0 1px 1px 0 rgba(0, 0, 0, .14), 0 2px 1px -1px rgba(0, 0, 0, .12);
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .2), 0 1px 1px 0 rgba(0, 0, 0, .14), 0 2px 1px -1px rgba(0, 0, 0, .12);
+    border-radius: 4px;
 }
 
 .u-hoverBlock:hover {
-    opacity: 0.8;
-    -webkit-transition: all 2s;
-    transition: all 2s;
-    box-shadow: 0 4px 80px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    opacity: 0.9;
+    -webkit-transition: all 1s;
+    transition: all 1s;
+    -webkit-box-shadow: 0 4px 20px 0 rgba(168, 182, 191, .6);
+    box-shadow: 0 4px 20px 0 rgba(168, 182, 191, .6);
 }
 
 .u-hoverBlock h1, .u-hoverBlock p {
-    color: #fff;
-    padding: 0 20px 0 20px;
-    background: #000;
-    opacity: 0.8;
+    padding: 3px 20px 0 20px;
+    background: #fefefe;
 }
 
 .u-hoverBlock h1 {
-    margin: 20px 0 0 0px !important;
+    border-top: 1px solid #ccc;
+    font-size: 30px;
+    margin: 31px 0 0 0;
 }
 
-.portfolio-1 {
-    background: #000 url('/img/port-1/JPEG/1.jpg') top center;
+.port-1 {
+    background: #000 url('/img/port-1/1.jpg') top center;
     background-size: cover;
 }
 
-.portfolio-2 {
-    background: #000 url('/img/port-2/JPEG/1.jpg');
+.port-2 {
+    background: #000 url('/img/port-2/1.jpg');
     background-size: cover;
 }
 
-.portfolio-3 {
-    background: #000 url('/img/port-3/JPEG/1.jpg');
+.port-3 {
+    background: #000 url('/img/port-3/1.jpg');
     background-size: cover;
 }
 
-.portfolio-4 {
-    background: #000 url('/img/port-4/JPEG/1.jpg');
+.port-4 {
+    background: #000 url('/img/port-4/1.jpg');
     background-size: cover;
 }
 
-.portfolio-5 {
-    background: #000 url('/img/port-5/1.png');
+.port-5 {
+    background: #000 url('/img/port-5/1.jpg');
     background-size: cover;
 }
 
-.portfolio-6 {
-    background: #000 url('/img/port-6/1.png');
+.port-6 {
+    background: #000 url('/img/port-6/2.jpg');
     background-size: cover;
 }
+
+.port-7 {
+    background: #000 url('/img/port-7/1.jpg');
+    background-size: cover;
+}
+
+.port-8 {
+    background: #000 url('/img/port-8/1.jpg');
+    background-size: cover;
+}
+
+.port-9 {
+    background: #000 url('/img/port-9/1.jpg');
+    background-size: cover;
+}
+
+/* Portfolio Detail Overlay */
 
 .u-portfolioEntry {
     background: #efefef;
     height: 100%;
     width: 100%;
     position: fixed;
-    margin-top: -30px;
-    z-index: 1000;
-    transition: all 1s;
     overflow: scroll;
+    top: 0;
 }
 
 .u-portfolioEntry.inactive {
@@ -337,7 +311,7 @@ h1, h2, h3, h4 {
     font-size: 28px;
     margin: 50px 0 0 0;
     cursor: pointer;
-    transition: all 0.5s;
+    transition: all 1s;
     position: absolute;
     right: 30px;
     top: 0;
@@ -345,7 +319,7 @@ h1, h2, h3, h4 {
 
 .u-closeButton:hover {
     color: #888;
-    transition: all 0.5s;
+    transition: all 1s;
 }
 
 .u-innerBlock {
@@ -373,8 +347,8 @@ h1, h2, h3, h4 {
 }
 
 .buttonCustom {
-    -webkit-transition: all 1s;
-    transition: all 2s;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
     border: 2px solid #633DB6;
     padding: 4px 30px;
     border-radius: 30px;
@@ -390,3 +364,68 @@ h1, h2, h3, h4 {
     text-decoration: none;
 }
 
+.img-responsive {
+    background-size: cover;
+    width: 100%;
+}
+
+/* Mobile Changes */
+@media (min-width: 768px) {
+    .mainContainer-home-menu .navbar-right {
+        position: absolute;
+        right: 30px;
+        top: 20px;
+    }
+}
+
+@media (max-width: 650px) {
+
+    .mainContainer-home {
+        height: 600px;
+    }
+
+    .mainContainer-about h1 {
+        margin-top: 0;
+    }
+
+    .mainContainer-home h1 {
+        font-size: 30px;
+    }
+
+    .mainContainer-about .u-hoverBlock h1 {
+        font-size: 20px;
+        margin-top: 24px;
+        padding-top: 15px;
+    }
+
+    .mainContainer-home .u-hoverBlock h4 {
+        font-size: 15px;
+    }
+
+    .u-hoverBlock p {
+        font-size: 14px;
+        padding-bottom: 12px;
+    }
+
+    .mainContainer-home-menu .nav-center {
+        text-align: center;
+        font-size: 24px;
+    }
+
+}
+
+@media (max-width: 992px) {
+    .menuBlock {
+        position: relative;
+        background: none;
+        border: none;
+    }
+
+    .u-portfolioEntry {
+        background: #fff;
+    }
+
+    .u-thumbnail:first-child {
+        margin-top: 30px;
+    }
+}
