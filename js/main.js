@@ -40,7 +40,7 @@ let portfolioApp = {
         el.classList.add('active');
 
         el.innerHTML = `<div class="row-fluid">
-                <div class="col-sm-12 col-md-3" style="padding: 0;">
+                <div class="col-sm-12 col-md-3 padding0">
                 <div class="menuBlock u-animate col-md-3"> 
                 <h1 class="u-animate">${options.title}</h1>
                 <h3 class="u-animate">${options.skills}</h3>
