@@ -96,6 +96,8 @@ let portfolioApp = {
 };
 
 window.onload = function () {
+    const el = document.getElementById('loader');
+    el.parentNode.removeChild(el);
     portfolioApp.contentClick();
     portfolioApp.animateContent();
 };

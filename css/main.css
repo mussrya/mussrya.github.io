@@ -67,6 +67,10 @@ h1, h2, h3, h4 {
     opacity: 1;
 }
 
+.loader{
+    text-align:center;
+}
+
 /* Main Container */
 
 .mainContainer {
