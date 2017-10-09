@@ -4,4 +4,4 @@ This is my personal portfolio site. I wanted to go for something a bit different
 
 ### URL
 The site can be seen here:
-http://ryan-musselwhite.com
+http://ryanmusselwhite.com
