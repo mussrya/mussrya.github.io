@@ -430,54 +430,53 @@ h1, h2, h3, h4 {
     margin: 28px 0 0 0;
 }
 
-.port-1 {
-    background: #000 url('/img/port-1/1.jpg') top center;
+div[class^="port-"]{
     background-size: cover;
+    background-color: #000;
+}
+
+.port-1 {
+    background-image: url('/img/port-1/1.jpg');
 }
 
 .port-2 {
-    background: #000 url('/img/port-2/1.jpg');
-    background-size: cover;
+    background-image: url('/img/port-2/1.jpg');
 }
 
 .port-3 {
-    background: #000 url('/img/port-3/1.jpg');
-    background-size: cover;
+    background-image: url('/img/port-3/1.jpg');
 }
 
 .port-4 {
-    background: #000 url('/img/port-4/1.jpg');
-    background-size: cover;
+    background-image: url('/img/port-4/1.jpg');
 }
 
 .port-5 {
-    background: #000 url('/img/port-5/1.jpg');
-    background-size: cover;
+    background-image: url('/img/port-5/1.jpg');
 }
 
 .port-6 {
-    background: #000 url('/img/port-6/2.jpg');
-    background-size: cover;
+    background-image: url('/img/port-6/1.jpg');
 }
 
 .port-7 {
-    background: #000 url('/img/port-7/1.jpg');
-    background-size: cover;
+    background-image: url('/img/port-7/1.jpg');
 }
 
 .port-8 {
-    background: #000 url('/img/port-8/1.jpg');
-    background-size: cover;
+    background-image: url('/img/port-8/1.jpg');
 }
 
 .port-9 {
-    background: #000 url('/img/port-9/1.jpg');
-    background-size: cover;
+    background-image: url('/img/port-9/1.jpg');
 }
 
 .port-10 {
-    background: #000 url('/img/port-10/1.jpg');
-    background-size: cover;
+    background-image: url('/img/port-10/1.jpg');
+}
+
+.port-11{
+    background-image: url('/img/port-11/1.jpg');
 }
 
 /* Portfolio Detail Overlay */
