@@ -478,6 +478,9 @@ div[class^="port-"]{
 .port-11{
     background-image: url('/img/port-11/1.jpg');
 }
+.port-12{
+    background-image: url('/img/port-12/1.jpg');
+}
 
 /* Portfolio Detail Overlay */
 
