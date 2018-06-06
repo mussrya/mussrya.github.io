@@ -4,8 +4,6 @@
 
 /* Core Elements */
 html, body {
-    margin: 0;
-    padding: 0;
     width: 100%;
     height: 100%;
     font-family: Lato, Helvetica;
@@ -18,43 +16,6 @@ html, body {
 
 h1, h2, h3, h4 {
     font-weight: 300;
-} 
-
-/* Gradient Animation & Animation */
-@-webkit-keyframes Gradient {
-    0% {
-        background-position: 0 50%;
-    }
-    50% {
-        background-position: 100% 50%;
-    }
-    100% {
-        background-position: 0 50%;
-    }
-}
-
-@-moz-keyframes Gradient {
-    0% {
-        background-position: 0 50%;
-    }
-    50% {
-        background-position: 100% 50%;
-    }
-    100% {
-        background-position: 0 50%;
-    }
-}
-
-@keyframes Gradient {
-    0% {
-        background-position: 0 50%;
-    }
-    50% {
-        background-position: 100% 50%;
-    }
-    100% {
-        background-position: 0 50%;
-    }
 }
 
 .u-animate {
@@ -272,8 +233,9 @@ h1, h2, h3, h4 {
     animation: Gradient 20s linear infinite;
     color: #fff;
     height: 620px;
-    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 83%);
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 83%);
+    width: 100%;
+    -webkit-clip-path: polygon(0 0, 120% 0, 100% 100%, 0 83%);
+    clip-path: polygon(0 0, 100% 0, 120% 100%, 0 83%);
 }
 
 .mainContainer-home-menu {
@@ -436,50 +398,50 @@ div[class^="port-"]{
 }
 
 .port-1 {
-    background-image: url('/img/port-1/1.jpg');
+    background-image: url('https://res.cloudinary.com/dpg33lzc0/image/upload/w_336,h_320,c_fill,g_north,f_auto/dpr_3.0/v1528279304/1_vdoizu.jpg');
 }
 
 .port-2 {
-    background-image: url('/img/port-2/1.jpg');
+    background-image: url('https://res.cloudinary.com/dpg33lzc0/image/upload/w_336,h_320,c_fill,g_north,f_auto/dpr_3.0/v1528279304/1_bl4irr.jpg');
 }
 
 .port-3 {
-    background-image: url('/img/port-3/1.jpg');
+    background-image: url('https://res.cloudinary.com/dpg33lzc0/image/upload/w_336,h_320,c_fit,g_north,f_auto/dpr_3.0/v1528279304/1_dcklxe.jpg');
 }
 
 .port-4 {
-    background-image: url('/img/port-4/1.jpg');
+    background-image: url('https://res.cloudinary.com/dpg33lzc0/image/upload/w_336,h_320,c_fit,g_north,f_auto/dpr_3.0/v1528279304/1_erj66f.jpg');
 }
 
 .port-5 {
-    background-image: url('/img/port-5/1.jpg');
+    background-image: url('https://res.cloudinary.com/dpg33lzc0/image/upload/w_336,h_320,c_fit,g_north,f_auto/dpr_3.0/v1528279304/1_exfz6r.jpg');
 }
 
 .port-6 {
-    background-image: url('/img/port-6/1.jpg');
+    background-image: url('https://res.cloudinary.com/dpg33lzc0/image/upload/w_336,h_320,c_fit,g_north,f_auto/dpr_3.0/v1528279304/1_sjvmxn.jpg');
 }
 
 .port-7 {
-    background-image: url('/img/port-7/1.jpg');
+    background-image: url('https://res.cloudinary.com/dpg33lzc0/image/upload/w_336,h_320,c_fit,g_north,f_auto/dpr_3.0/v1528279304/1_yeiksp.jpg');
 }
 
 .port-8 {
-    background-image: url('/img/port-8/1.jpg');
+    background-image: url('https://res.cloudinary.com/dpg33lzc0/image/upload/w_336,h_320,c_fit,g_north,f_auto/dpr_3.0/v1528279304/1_uqcsyu.jpg');
 }
 
 .port-9 {
-    background-image: url('/img/port-9/1.jpg');
+    background-image: url('https://res.cloudinary.com/dpg33lzc0/image/upload/w_336,h_320,c_fit,g_north,f_auto/dpr_3.0/v1528279304/3_eixpmh.jpg');
 }
 
 .port-10 {
-    background-image: url('/img/port-10/1.jpg');
+    background-image: url('https://res.cloudinary.com/dpg33lzc0/image/upload/w_336,h_320,c_fit,g_north,f_auto/dpr_3.0/v1528279304/1_olb5no.jpg');
 }
 
 .port-11{
-    background-image: url('/img/port-11/1.jpg');
+    background-image: url('https://res.cloudinary.com/dpg33lzc0/image/upload/w_336,h_320,c_fit,g_north,f_auto/dpr_3.0/v1528279304/1_frqcle.jpg');
 }
 .port-12{
-    background-image: url('/img/port-12/1.jpg');
+    background-image: url('https://res.cloudinary.com/dpg33lzc0/image/upload/w_336,h_320,c_fit,g_north,f_auto/dpr_3.0/v1528279304/1_fbykut.jpg');
 }
 
 /* Portfolio Detail Overlay */

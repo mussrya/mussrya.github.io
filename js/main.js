@@ -21,7 +21,7 @@ let portfolioApp = {
                     title: portfolioItem.getAttribute('data-title'),
                     skills: portfolioItem.getAttribute('data-skills'),
                     content: portfolioItem.getAttribute('data-content'),
-                    port: portfolioItem.getAttribute('data-port'),
+                    images: portfolioItem.getAttribute('data-images'),
                     link: portfolioItem.getAttribute('data-link'),
                     gh: portfolioItem.getAttribute('data-gh'),
                     images: portfolioItem.getAttribute('data-images')
@@ -36,6 +36,16 @@ let portfolioApp = {
         document.body.innerHTML += `<div id="loadedPortfolio" class="u-portfolioEntry inactive text-center"></div>`;
 
         const el = document.getElementById('loadedPortfolio');
+
+        let images = [];
+        let imagesHTML = ``;
+        if(typeof(options.images) !== 'undefined'){
+            images = options.images.split(',');
+            images.map(image => {
+                imagesHTML += `<div class="u-thumbnail u-animate"><img class="img-responsive" src="${image}"/></div>`;
+            });
+        }
+
         el.classList.remove('inactive');
         el.classList.add('active');
 
@@ -50,20 +60,10 @@ let portfolioApp = {
                 </div>
                 </div>
                 <div class="col-sm-12 col-md-9">
-                ${generateImages(options.port, parseInt(options.images))}
+                ${imagesHTML}
                 </div>
                 </div>
                 <span id="close" class="u-closeButton u-animate">X</span>`;
-
-        function generateImages(port, numberOfImages)
-        {
-            let htmlImages = '';
-            for (let i = 0; i < numberOfImages; i++) {
-                htmlImages += `<div class="u-thumbnail u-animate">
-                <img class="img-responsive" src="/img/${port}/${i + 1}.jpg"></div>`;
-            }
-            return htmlImages;
-        }
 
         setTimeout(function () {
             const el = document.getElementById('close');
