@@ -1,6 +1,6 @@
 # portfolio
 ### Description
-This is my personal portfolio site. I wanted to go for something a bit different in terms of styling so I created an animated gradient on the top section and custom animation throughout the site.
+This is my personal portfolio site. I kept it basic intentionally :)
 
 ### URL
 The site can be seen here:
